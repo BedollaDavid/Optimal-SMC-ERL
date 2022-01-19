@@ -1,0 +1,34 @@
+Propriétés de masse de Brazo
+     Configuration: Predeterminado
+     Système de coordonnées: Système de coordonnées1
+
+Densité = 2700.00 kilogrammes par mètre cube
+
+Masse = 5.92 kilogrammes
+
+Volume = 0.00 mètres cubes
+
+Superficie = 0.19 mètres carrés
+
+Centre de gravité: ( mètres )
+	X = 0.06
+	Y = 0.00
+	Z = 0.03
+
+Principaux axes et moments d'inertie: ( kilogrammes * mètres carrés )
+Pris au centre de gravité.
+	 Ix = ( 1.00,  0.00,  0.00)   	Px = 0.02
+	 Iy = ( 0.00,  1.00,  0.00)   	Py = 0.13
+	 Iz = ( 0.00,  0.00,  1.00)   	Pz = 0.14
+
+Moments d'inertie: ( kilogrammes * mètres carrés )
+Pris au centre de gravité et aligné avec le système de coordonnées de sortie.
+	Lxx = 0.02	Lxy = 0.00	Lxz = 0.00
+	Lyx = 0.00	Lyy = 0.13	Lyz = 0.00
+	Lzx = 0.00	Lzy = 0.00	Lzz = 0.14
+
+Moments d'inertie: ( kilogrammes * mètres carrés )
+Pris au système de coordonnées de sortie.
+	Ixx = 0.02	Ixy = 0.00	Ixz = 0.01
+	Iyx = 0.00	Iyy = 0.15	Iyz = 0.00
+	Izx = 0.01	Izy = 0.00	Izz = 0.16

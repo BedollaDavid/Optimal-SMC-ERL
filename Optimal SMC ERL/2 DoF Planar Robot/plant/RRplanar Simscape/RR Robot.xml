@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="05/12/20||22:28:17" using="Simscape Multibody Link Version 6.0" from="SolidWorks 26.3.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="Robot" uid="Robot" version="261">
+<AssemblyFile name="Robot.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="Eje-3" uid="Eje-3" grounded="true" entityUid="Eje*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.028988109101270716 0.017967760196842548 0.013812389196753903</Translation>
+</Transform>
+</Instance>
+<Instance name="Brazo-4" uid="Brazo-4" entityUid="Brazo*:*Predeterminado">
+<Transform>
+<Rotation>0.00091815404802332579 0.99999957849648335 0 3.3694306937337874e-15 0 -1 -0.99999957849648335 0.0009181540480233813 -3.36942296228089e-15</Rotation>
+<Translation>0.029298629718467795 -0.032032239803156282 -0.32438846825033513</Translation>
+</Transform>
+</Instance>
+<Instance name="Hombro-3" uid="Hombro-3" entityUid="Hombro*:*Predeterminado">
+<Transform>
+<Rotation>0.00091815404802329716 0.99999957849648347 0 3.4914798671918131e-15 0 -1 -0.99999957849648347 0.00091815404802335267 -3.4914813388635333e-15</Rotation>
+<Translation>0.028988109101271038 0.017967760196842548 0.013812389196754003</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Coincident name="Coïncidente3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Eje-3</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 1 3.4914813388431334e-15</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Hombro-3</Uid>
+</InstancePath>
+<Position>0.25044399999999961 0.079883000000000912 0</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Coaxiale1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Eje-3</Uid>
+</InstancePath>
+<Position>0 -0.010160000000000001 0</Position>
+<Axis>0 1 3.4914813388431334e-15</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Hombro-3</Uid>
+</InstancePath>
+<Position>0 0 0.050000000000000003</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coïncidente4">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Hombro-3</Uid>
+</InstancePath>
+<Position>0.25044399999999956 0.079883000000000912 0.050000000000000003</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Brazo-4</Uid>
+</InstancePath>
+<Position>0.2583180000000001 9.3675067702747583e-16 0</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Coaxiale2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Hombro-3</Uid>
+</InstancePath>
+<Position>0.33820100000000003 1.2212453270876722e-15 0.050000000000000003</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Brazo-4</Uid>
+</InstancePath>
+<Position>0 0 0.050000000000000003</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="Brazo" uid="Brazo*:*Predeterminado" version="154">
+<ModelUnits mass="kilogram" length="meter"/>
+<PartFile name="Brazo.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>5.9238054323347997</Mass>
+<CenterOfMass>0.057760663382058479 -0.00019562641170587093 0.025000000000000001</CenterOfMass>
+<Inertia>0.016970558713054491 0.12632863486890164 0.14083094131848331 0 0 0.00015020631245332247</Inertia>
+</MassProperties>
+<GeometryFile name="Brazo_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.89411764705882346" g="0.9137254901960784" b="0.92941176470588238" a="1"/>
+<Diffuse r="0.89411764705882346" g="0.9137254901960784" b="0.92941176470588238" a="1"/>
+<Specular r="0.44705882352941173" g="0.4568627450980392" b="0.46470588235294119" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Eje" uid="Eje*:*Predeterminado" version="125">
+<ModelUnits mass="kilogram" length="inch"/>
+<PartFile name="Eje.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0087003700990956698</Mass>
+<CenterOfMass>0 -0.0050800000000000003 0</CenterOfMass>
+<Inertia>6.6772868155389448e-07 1.1857738758242538e-06 6.6772868155389426e-07 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Eje_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Hombro" uid="Hombro*:*Predeterminado" version="144">
+<ModelUnits mass="kilogram" length="meter"/>
+<PartFile name="Hombro.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>11.899089117189128</Mass>
+<CenterOfMass>0.084799082535266995 0 0.024999999999999994</CenterOfMass>
+<Inertia>0.06290685199736247 0.4827086204869776 0.54065751868551126 0 0 -1.5531048985596799e-15</Inertia>
+</MassProperties>
+<GeometryFile name="Hombro_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.89411764705882346" g="0.9137254901960784" b="0.92941176470588238" a="1"/>
+<Diffuse r="0.89411764705882346" g="0.9137254901960784" b="0.92941176470588238" a="1"/>
+<Specular r="0.44705882352941173" g="0.4568627450980392" b="0.46470588235294119" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
